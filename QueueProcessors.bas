@@ -1042,6 +1042,8 @@ Public Sub Process_PO_BudgetCheck_Q()
 End Sub
 Public Sub Process_PO_Receipt_Queue()
 
+    Output_Init
+
 
     Dim queueTableRange As Range
     
@@ -1203,6 +1205,11 @@ Public Sub Process_PO_Receipt_Queue()
                             queueTableRange.Cells(curRow, C_RCPT_ID).Value = Rcpts(idxParent).RECEIPT_ID
                         End If
                         
+                        ' added in v2.10.2: include error text even if no error (it may have other useful info).
+                        If Rcpts(idxParent).GlobalError <> "" Then
+                            queueTableRange.Cells(curRow, C_RCPT_ERR).Value = Rcpts(idxParent).GlobalError
+                        End If
+                        
                     Next idxChild
                 ElseIf Rcpts(idxParent).ReceiveMode = RECEIVE_ALL Then
                     ' update 2.10.1: copy all receipt lines to one row
@@ -1228,6 +1235,12 @@ Public Sub Process_PO_Receipt_Queue()
                     queueTableRange.Cells(curRow, C_RECEIVE_QTY).Value = RTrim(rcptItemQtyStr)
                     queueTableRange.Cells(curRow, C_ITEM_ID).Value = RTrim(rcptItemIDStr)
                     queueTableRange.Cells(curRow, C_TRANS_ITEM_DESC).Value = RTrim(recpTransItemDescStr)
+                    
+                    
+                    ' added in v2.10.2: include error text even if no error (it may have other useful info).
+                    If Rcpts(idxParent).GlobalError <> "" Then
+                        queueTableRange.Cells(curRow, C_RCPT_ERR).Value = Rcpts(idxParent).GlobalError
+                    End If
                 Else
                     Err.Raise -1, , "Unknown Receive Mode (This should never happen)"
                 End If

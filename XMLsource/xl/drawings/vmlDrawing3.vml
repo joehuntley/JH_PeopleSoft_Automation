@@ -9,7 +9,7 @@
   <v:path shadowok="f" o:extrusionok="f" strokeok="f" fillok="f" o:connecttype="rect"/>
   <o:lock v:ext="edit" shapetype="t"/>
  </v:shapetype><v:shape id="_x0000_s12289" type="#_x0000_t201" style='position:absolute;
-  margin-left:48pt;margin-top:6pt;width:129.75pt;height:21.75pt;z-index:1;
+  margin-left:49.8pt;margin-top:6pt;width:133.2pt;height:21.6pt;z-index:1;
   mso-wrap-style:tight' o:button="t" fillcolor="buttonFace [67]" strokecolor="windowText [64]"
   o:insetmode="auto">
   <v:fill color2="buttonFace [67]" o:detectmouseclick="t"/>
@@ -20,7 +20,7 @@
   </v:textbox>
   <x:ClientData ObjectType="Button">
    <x:Anchor>
-    1, 2, 0, 8, 3, 11, 0, 37</x:Anchor>
+    1, 3, 0, 10, 3, 14, 0, 46</x:Anchor>
    <x:PrintObject>False</x:PrintObject>
    <x:AutoFill>False</x:AutoFill>
    <x:FmlaMacro>[0]!Process_PO_Receipt_Queue</x:FmlaMacro>
@@ -32,7 +32,7 @@
   <v:stroke joinstyle="miter"/>
   <v:path gradientshapeok="t" o:connecttype="rect"/>
  </v:shapetype><v:shape id="_x0000_s12290" type="#_x0000_t202" style='position:absolute;
-  margin-left:294.75pt;margin-top:57pt;width:108pt;height:90.75pt;z-index:2;
+  margin-left:300.6pt;margin-top:54.6pt;width:244.8pt;height:148.8pt;z-index:2;
   visibility:hidden;mso-wrap-style:tight' fillcolor="#ffffe1" o:insetmode="auto">
   <v:fill color2="#ffffe1"/>
   <v:shadow on="t" color="black" obscured="t"/>
@@ -44,13 +44,13 @@
    <x:MoveWithCells/>
    <x:SizeWithCells/>
    <x:Anchor>
-    5, 16, 2, 12, 6, 69, 3, 113</x:Anchor>
+    5, 16, 2, 12, 7, 36, 12, 20</x:Anchor>
    <x:AutoFill>False</x:AutoFill>
    <x:Row>2</x:Row>
    <x:Column>4</x:Column>
   </x:ClientData>
  </v:shape><v:shape id="_x0000_s12291" type="#_x0000_t202" style='position:absolute;
-  margin-left:828pt;margin-top:40.5pt;width:108pt;height:93pt;z-index:3;
+  margin-left:849pt;margin-top:39pt;width:177pt;height:107.4pt;z-index:3;
   visibility:hidden;mso-wrap-style:tight' fillcolor="#ffffe1" o:insetmode="auto">
   <v:fill color2="#ffffe1"/>
   <v:shadow on="t" color="black" obscured="t"/>
@@ -62,9 +62,27 @@
    <x:MoveWithCells/>
    <x:SizeWithCells/>
    <x:Anchor>
-    9, 16, 1, 10, 9, 160, 3, 94</x:Anchor>
+    9, 16, 1, 10, 9, 311, 8, 21</x:Anchor>
    <x:AutoFill>False</x:AutoFill>
    <x:Row>2</x:Row>
    <x:Column>8</x:Column>
+  </x:ClientData>
+ </v:shape><v:shape id="_x0000_s12292" type="#_x0000_t202" style='position:absolute;
+  margin-left:184.2pt;margin-top:41.4pt;width:207pt;height:129.6pt;z-index:4;
+  visibility:hidden;mso-wrap-style:tight' fillcolor="#ffffe1" o:insetmode="auto">
+  <v:fill color2="#ffffe1"/>
+  <v:shadow on="t" color="black" obscured="t"/>
+  <v:path o:connecttype="none"/>
+  <v:textbox style='mso-direction-alt:auto'>
+   <div style='text-align:left'></div>
+  </v:textbox>
+  <x:ClientData ObjectType="Note">
+   <x:MoveWithCells/>
+   <x:SizeWithCells/>
+   <x:Anchor>
+    3, 16, 1, 14, 6, 50, 10, 14</x:Anchor>
+   <x:AutoFill>False</x:AutoFill>
+   <x:Row>2</x:Row>
+   <x:Column>2</x:Column>
   </x:ClientData>
  </v:shape></xml>
